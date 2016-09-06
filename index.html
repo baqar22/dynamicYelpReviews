@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front end code test</title>
+	<!--Standard styles from Yelp -->
+     <link rel="stylesheet" type="text/css" media="all" href="css/standard.css">
+	 <!--Some custom styles from me -->
+	 <link rel="stylesheet" type="text/css" media="all" href="css/review.css">
+</head>
+<body>
+<button id="loadReviewButton" class="btn" onclick="loadReviews('dynamicReviewContainer')">Load Reviews</button>
+
+<!--First Review using html tags -->
+	<div id="reviewContainerTop" >
+	    
+		<!--Anchor will be enabled for user image and user name -->
+		<a href='http://google.com' target='_blank'><img src="http://www.placebear.com/60/60" style="float:left" alt='Reviewer avatar image'></a>
+		<!--This div will contain left section including name, location, friends, reviews_count and elite-->
+		<div class="nameAddressContainer">
+			<!--Override color property of h3 tag from standard.css-->
+			<h3 style="color:#0000ff"> Jeremy S.</h3>
+			<strong> San Francisco, CA </strong><br>
+			<i class="i i-common-sprite i-friend"></i> 11 friends<br>
+			<i class="i i-common-sprite i-star"></i> 22 reviews
+			<!--Override color property of h4 tag from standard.css-->
+			<h4 style="color:#cc3300"> Elite '15</h4>
+		</div>
+		<!--This div will contain right section including star rating, date, checckins and comment text -->
+		<div class="starCommentsContainer">
+			<div class="biz-rating clearfix">
+				<div class="rating rating--very-large">
+					<i class="star-img stars_4" title="4.0 star rating"></i>
+				</div>
+				10/10/2008
+			</div>
+			<i class="i i-common i-checkin"></i> 101 checkins
+			<p class="commentContainer">Additionally, we included a small part of our styleguide with some components that
+			might be useful. The styling for these components lives in css/standard.css and are
+			documented in the documentation.html file. Optional : if you create any components
+			of your own, please add them to the documentation.html file and document them
+			accordingly.</p>
+		</div>
+	</div>
+<!--Second Review using html tags. It's duplicate of first div with some data change -->
+<div id="reviewContainer2" style="margin-top:250px">
+		<!--Anchor will be enabled for user image and user name -->
+		<a href='http://google.com' target='_blank'><img src="http://www.placebear.com/60/60" style="float:left" alt='Reviewer avatar image'></a>
+		<!--This div will contain left section including name, location, friends, reviews_count and elite-->
+		<div class="nameAddressContainer">
+		     <!--Override color property of h3 tag from standard.css-->
+			<h3 style="color:#0000ff"> Ankit Kumar</h3>
+			<strong> Santa Clara, CA </strong><br>
+			<i class="i i-common-sprite i-friend"></i> 1098 friends<br>
+			<i class="i i-common-sprite i-star"></i> 254 reviews
+			<!--Override color property of h4 tag from standard.css-->
+			<h4 style="color:#cc3300"> Elite '14</h4>
+		</div>
+		<!--This div will contain right section including star rating, date, checckins and comment text -->
+		<div class="starCommentsContainer" >
+			<div class="biz-rating clearfix">
+				<div class="rating rating--very-large">
+					<i class="star-img stars_4_half" title="4.0 star rating"></i>
+				</div>
+				9/27/2010
+			</div>
+			<i class="i i-common i-checkin"></i> 101 checkins
+			<p class="commentContainer">Additionally, we included a small part of our styleguide with some components that
+			might be useful. The styling for these components lives in css/standard.css and are
+			documented in the documentation.html file. Optional : if you create any components
+			of your own, please add them to the documentation.html file and document them
+			accordingly.</p>
+		</div>
+</div>
+
+<!--This div will hold dynamic created reviews -->
+<div id="dynamicReviewContainer" style="margin-top:500px" ></div>
+
+</body>
+
+<!--Loading scripts at end for better page load experience -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<!--This script will contain JS code for loading JSON and generating dynamc review div-->
+<script src="reviewGenerator.js"></script>
+
+</html>

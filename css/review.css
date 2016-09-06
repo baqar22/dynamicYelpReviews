@@ -1,0 +1,28 @@
+.nameAddressContainer{
+position:absolute; 
+margin-left: 80px;
+}
+
+.starCommentsContainer{
+position:absolute; 
+margin-left:250px;
+}
+
+.commentContainer{
+position:absolute; 
+width:200%;
+height:100%;
+}
+
+p{
+width: 400px;
+}
+
+ul{
+list-style: none;
+}
+img{
+margin-top:1%;
+}
+
+

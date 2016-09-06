@@ -1,0 +1,327 @@
+/** Clearfix utility class */
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+
+/** Typography */
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.286;
+    color: #333;
+}
+
+body,
+textarea,
+input,
+button {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 21px;
+    line-height: 1.286;
+}
+
+h3 {
+    font-size: 16px;
+    line-height: 1.3125;
+}
+
+h1, h2, h3 {
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+
+h2, h3 {
+    color: #c41200;
+}
+
+p {
+    margin-bottom: 12px;
+}
+
+small {
+	font-size: 12px;
+	line-height: 1.5;
+}
+
+strong {
+    font-weight: bold;
+}
+
+a {
+    color: #3b65a7;;
+    text-decoration: none;
+}
+
+a:not(.btn):hover {
+    text-decoration: underline;
+}
+
+.subtle-text {
+    color: #999;
+}
+
+
+/** Layout */
+
+#wrap {
+    width: 990px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.layout-a,
+.layout-b {
+    margin: 0 -15px;
+}
+
+.layout-a .col-a {
+    float: left;
+    width: 66.6667%;
+    padding: 0 15px;
+}
+
+.layout-a .col-b {
+    float: left;
+    width: 33.3333%;
+    padding: 0 15px;
+}
+
+.layout-b .col-a {
+    float: left;
+    width: 50%;
+    padding: 0 15px;
+}
+
+.layout-b .col-b {
+    float: left;
+    width: 50%;
+    padding: 0 15px;
+}
+
+
+/** Buttons */
+
+.btn {
+    cursor: pointer;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    padding: 7px 16px;
+    border: 1px solid;
+    border-color: #cdcdcd;
+    border-color: rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    font-size: 14px;
+	line-height: 1.286;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+    background: #f8f8f8;
+    background: -webkit-linear-gradient(white, #eee);
+    background: linear-gradient(white, #eee);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
+        inset 0 -2px 2px rgba(0, 0, 0, 0.05),
+        inset 0 -1px 1px white;
+}
+
+.btn:hover {
+    background: #f0f0f0;
+    background: -webkit-linear-gradient(#fafafa, #e9e9e9);
+    background: linear-gradient(#fafafa, #e9e9e9);
+}
+
+.btn:focus {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+}
+
+.btn:active,
+.btn:disabled {
+    box-shadow: none;
+    background: -webkit-linear-gradient(#f0f0f0, white);
+    background: linear-gradient(#f0f0f0, white);
+}
+
+.btn:disabled {
+    opacity: 0.4;
+    cursor: default;
+}
+
+.btn-small {
+    padding: 5px 8px;
+    font-size: 12px;
+    line-height: 1.5;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary {
+    color: white;
+    border-color: #a50508;
+    background: #ea050b;
+    background-image: -webkit-linear-gradient(#ff2000 2%, #ea050b 10%, #d40d04 100%);
+    background-image:         linear-gradient(#ff2000 2%, #ea050b 10%, #d40d04 100%);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+    text-shadow: 0 -1px 0 #760400;
+}
+
+.btn-primary:hover {
+    background: #ff2000;
+    background-image: -webkit-linear-gradient(#ff2000 2%, #ea050b 50%, #d40d04 100%);
+    background-image:         linear-gradient(#ff2000 2%, #ea050b 50%, #d40d04 100%);
+}
+
+.btn-primary:active,
+.btn-primary:disabled {
+    background: #d40d04;
+    background-image: -webkit-linear-gradient(#d40d04 0%, #ea050b 90%, #ff2000 98%);
+    background-image:         linear-gradient(#d40d04 0%, #ea050b 90%, #ff2000 98%);
+}
+
+
+/** Lists */
+
+.std-list li {
+    margin-bottom: 6px;
+}
+
+.std-list-bordered li {
+    margin: 0;
+    padding: 18px 0;
+    border-bottom: 1px solid #e5e5e1;
+}
+
+
+/** Avatars */
+
+.avatar {
+    border-radius: 4px;
+}
+
+
+/** Icons */
+
+.i {
+    display: inline-block;
+    vertical-align: middle;
+    width: 18px;
+    height: 18px;
+    background-repeat: none;
+}
+
+.i-common {
+    background-image: url('../images/common.png');
+}
+
+.i-common-sprite {
+    background-image: url('../images/common_sprite.png');
+}
+
+.i-checkin {
+    background-position: -5px -5px;
+}
+
+.i-friend {
+    background-position: -3px -1366px;
+}
+
+.i-star {
+    background-position: -3px -1780px;
+}
+
+
+/** Stars */
+
+.rating {
+    position: relative;
+    overflow: hidden;
+    width: 82px;
+    height: 14px;
+}
+
+.star-img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url('../images/stars_map.png') no-repeat;
+}
+
+.rating .stars_0      { background-position: -3px -3px;   }
+.rating .stars_1      { background-position: -3px -21px;  }
+.rating .stars_1_half { background-position: -3px -39px;  }
+.rating .stars_2      { background-position: -3px -57px;  }
+.rating .stars_2_half { background-position: -3px -75px;  }
+.rating .stars_3      { background-position: -3px -93px;  }
+.rating .stars_3_half { background-position: -3px -111px; }
+.rating .stars_4      { background-position: -3px -129px; }
+.rating .stars_4_half { background-position: -3px -147px; }
+.rating .stars_5      { background-position: -3px -165px; }
+
+.rating--very-large {
+    width: 126px;
+    height: 22px;
+}
+
+.rating--very-large .stars_0      { background-position: -3px -514px; }
+.rating--very-large .stars_1      { background-position: -3px -539px; }
+.rating--very-large .stars_1_half { background-position: -3px -564px; }
+.rating--very-large .stars_2      { background-position: -3px -589px; }
+.rating--very-large .stars_2_half { background-position: -3px -614px; }
+.rating--very-large .stars_3      { background-position: -3px -639px; }
+.rating--very-large .stars_3_half { background-position: -3px -664px; }
+.rating--very-large .stars_4      { background-position: -3px -689px; }
+.rating--very-large .stars_4_half { background-position: -3px -714px; }
+.rating--very-large .stars_5      { background-position: -3px -739px; }
+
+/** Business ratings */
+
+.biz-rating {
+    margin: 3px 0;
+}
+
+.biz-rating .rating {
+    float: left;
+    margin: 1px 6px 0 0;
+}
+
+.biz-rating .rating--very-large {
+    margin-top: -2px;
+}
+
+.rating-qualifier {
+    display: block;
+    float: left;
+    color: #555;
+}
+
+.biz-rating-medium .rating-qualifier {
+    font-size: 12px;
+    line-height: 1.5;
+}
